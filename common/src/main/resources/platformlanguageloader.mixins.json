@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "wtf.cheeze.pll.mixin",
+  "compatibilityLevel": "JAVA_18",
+  "refmap": "platformlanguageloader.refmap.json",
+  "mixins": [],
+  "client": [
+    "ClientLanguageMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
