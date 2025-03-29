@@ -20,3 +20,18 @@ which will be loaded if none of your platform specific folders were matched
 | BSD Varieties      | `bsd`        |
 | Other Unix Systems | `other_unix` |
 
+## How to use it
+
+If you're a resource pack developer, mark PlatformLanguageLoader (slug `pll` or id `wxtqhcW6`) as required
+in the dependencies section of your pack on Modrinth. You should also instruct your users to download it in the description,
+as many users don't download through launchers and unlike mods, resource packs won't show warnings if their deps are not loaded.
+
+If you're a mod developer, you can either mark the project as a dependency on Modrinth or include it via JiJ.
+PLL is available on Maven Central. You can include it in your project with the snippet below:
+
+```groovy
+dependencies {
+    include(modImplementation("wtf.cheeze:platformlangaugeloader-fabric:1.0.0+mc1.21"))
+}
+```
+
